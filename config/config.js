@@ -1,0 +1,1 @@
+var title = "my website"; //title of website

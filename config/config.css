@@ -1,0 +1,74 @@
+/* modify all :root variables to customise your website's style aight
+DONT TOUCH REST OF CSS CODE IF YOU DONT WANNA BREAK TEMPLATE */
+
+:root {
+  --primary-color: #000000;
+  --secondary-color: #69e469;
+  --border-color: #69e469;
+  --font-color: #ffffff;
+  --font-family: consolas;
+}
+
+*{
+  transition: 0.2s ease-in-out;
+  color: var(--font-color);
+  font-family: var(--font-family);
+}
+
+html, body {
+  height: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  background: 
+    linear-gradient(45deg, var(--primary-color) 25%, transparent 25%) 0 0,
+    linear-gradient(45deg, transparent 75%, var(--primary-color) 75%) 0 0,
+    linear-gradient(45deg, transparent 75%, var(--primary-color) 75%) 50px -50px,
+    linear-gradient(45deg, var(--primary-color) 25%, transparent 25%) 50px -50px,
+    linear-gradient(45deg, var(--secondary-color) 25%, transparent 25%) 0 0,
+    linear-gradient(45deg, transparent 75%, var(--secondary-color) 75%) 0 0,
+    linear-gradient(45deg, transparent 75%, var(--secondary-color) 75%) 50px -50px,
+    linear-gradient(45deg, var(--secondary-color) 25%, transparent 25%) 50px -50px;
+  background-color: var(--secondary-color);
+  background-size: 100px 100px;
+  min-height: 100vh;
+}
+
+#main-container, footer{
+  background-color: var(--primary-color);
+  border-color: var(--border-color);
+  border-width: 4px;
+  border-style: solid;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 8vw;
+}
+
+
+#main-container * *{
+
+}
+
+#main-container {
+  display: flex;
+  margin-left: 22.5vw;
+  margin-right: 22.5vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  padding: 0%;
+  min-height: calc(100% - 8px - 4vh);
+}
+#main-container *{
+  min-height: 100%;
+}
+#left-collumn{
+  flex: 40%;
+}
+#right-collumn{
+  flex: 60%;
+}
